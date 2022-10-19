@@ -1,0 +1,31 @@
+body {
+  font-family: "Ubuntu", "Arial", sans-serif;
+  font-weight: 300;
+  background-color: #454647;
+  color: #ebebeb;
+}
+
+label {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+input,
+label {
+  display: block;
+}
+
+.form input {
+  font-size: 1rem;
+  padding: 0.5rem;
+  width: 70%;
+}
+
+.header {
+  background: #343535;
+  box-shadow: 0 16px 16px -16px rgb(0 0 0 / 10%);
+}
+
+.form section {
+  margin-bottom: 1.5rem;
+}

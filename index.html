@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add new library to cdnjs</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <img src="./img/logo.svg" alt="&lt; cdnjs &gt;" width="132" height="36" />
+    </header>
+    <main>
+      <h2>cdnjs Library Request</h2>
+      <form action="" class="form">
+        <p>
+          Please fill out the information in this issue template so that we can
+          efficiently process your request for a new library to be added to
+          cdnjs.
+        </p>
+        <p>
+          To add a library to cdnjs, it must have a way for an auto-update
+          mechanism to be used.
+        </p>
+        <p>
+          This can either be via a Git repository that has versions tagged, with
+          the required files included in the repository at the tag.
+          Alternatively, this can be done via an NPM package.
+        </p>
+        <p>
+          cdnjs has a basic popularity requirement for libraries being added.
+          Please ensure the library you are requesting has at least 800
+          downloads per month on NPM or over 200 stars on GitHub / GitLab /
+          Bitbucket.
+        </p>
+        <section>
+          <label for="">Library name *</label>
+          <p>
+            Please provide the name of the library that you wish to have added
+            to cdnjs
+          </p>
+          <input type="text" placeholder="bootstrap" />
+        </section>
+        <section>
+          <label for="">Library license *</label>
+          <p>
+            Please provide a link to the open-source license that the library is
+            covered by (MIT, Apache 2.0, etc.)
+          </p>
+          <input
+            type="text"
+            placeholder="https://github.com/twbs/bootstrap/blob/main/LICENSE"
+          />
+        </section>
+        <section>
+          <label for="">Library source *</label>
+          <p>
+            Please provide a link an <strong>NPM package</strong>
+            <!-- or tagged Git repository -->
+            as the source for library versions
+          </p>
+
+          <input
+            type="text"
+            placeholder="https://www.npmjs.com/package/bootstrap"
+          />
+        </section>
+
+        <label for="">Files to include *</label>
+        <p>
+          Please provide a list of all the files that we should include from the
+          source for the library on cdnjs
+        </p>
+
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+
+        <button>Submit</button>
+      </form>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
