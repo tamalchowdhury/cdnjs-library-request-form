@@ -9,9 +9,16 @@
   </head>
   <body>
     <header class="header">
-      <img src="./img/logo.svg" alt="&lt; cdnjs &gt;" width="132" height="36" />
+      <div class="wrapper">
+        <img
+          src="./img/logo.svg"
+          alt="&lt; cdnjs &gt;"
+          width="132"
+          height="36"
+        />
+      </div>
     </header>
-    <main>
+    <main class="wrapper content">
       <h2>cdnjs Library Request</h2>
       <form action="" class="form">
         <p>
@@ -30,12 +37,12 @@
         </p>
         <p>
           cdnjs has a basic popularity requirement for libraries being added.
-          Please ensure the library you are requesting has at least 800
-          downloads per month on NPM or over 200 stars on GitHub / GitLab /
-          Bitbucket.
+          Please ensure the library you are requesting has at least
+          <strong>800 downloads</strong> per month on NPM or over
+          <strong>200 stars</strong> on GitHub / GitLab / Bitbucket.
         </p>
         <section>
-          <label for="">Library name *</label>
+          <label for="name">Library name *</label>
           <p>
             Please provide the name of the library that you wish to have added
             to cdnjs
@@ -49,18 +56,19 @@
           />
         </section>
         <section>
-          <label for="">Library license *</label>
+          <label for="license">Library license *</label>
           <p>
             Please provide a link to the open-source license that the library is
             covered by (MIT, Apache 2.0, etc.)
           </p>
           <input
             type="text"
+            name="license"
             placeholder="https://github.com/twbs/bootstrap/blob/main/LICENSE"
           />
         </section>
         <section>
-          <label for="">Library source *</label>
+          <label for="source">Library source *</label>
           <p>
             Please provide a link an <strong>NPM package</strong>
             <!-- or tagged Git repository -->
@@ -69,17 +77,24 @@
 
           <input
             type="text"
+            name="source"
             placeholder="https://www.npmjs.com/package/bootstrap"
           />
         </section>
 
-        <label for="">Files to include *</label>
+        <label for="fileNames">Files to include *</label>
         <p>
           Please provide a list of all the files that we should include from the
           source for the library on cdnjs
         </p>
 
-        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <textarea
+          name="fileNames"
+          rows="10"
+          placeholder="bootstrap.min.js
+bootstrap.min.css
+          "
+        ></textarea>
 
         <button>Submit</button>
       </form>
@@ -88,6 +103,6 @@
       <pre class="output"></pre>
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.14.6/beautify.min.js"></script>
-    <script src="./script.js" type="module"></script>
+    <script src="script.js" type="module"></script>
   </body>
 </html>

@@ -1,29 +1,50 @@
 body {
   font-family: "Ubuntu", "Arial", sans-serif;
   font-weight: 300;
+  font-size: 1rem;
   background-color: #454647;
   color: #ebebeb;
+  margin: 0;
+  padding: 0;
 }
 
 label {
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 input,
-label {
+label,
+button {
   display: block;
 }
 
-.form input {
+.form input,
+.form textarea {
   font-size: 1rem;
   padding: 0.5rem;
   width: 70%;
 }
 
+.form button {
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
 .header {
   background: #343535;
   box-shadow: 0 16px 16px -16px rgb(0 0 0 / 10%);
+  padding: 10px;
+}
+
+.wrapper {
+  width: 1000px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.content {
+  padding: 10px;
 }
 
 .form section {

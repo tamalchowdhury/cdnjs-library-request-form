@@ -95,11 +95,15 @@ async function handleSubmit(event) {
   event.preventDefault()
 
   let name = event.target.name.value
+  let license = event.target.license.value
+  let source = event.target.source.value
+  let fileNames = event.target.fileNames.value
 
   if (!name) return
 
   let cdnjsData = await npm({ name })
 
   console.log("Requested data is ", cdnjsData)
-  document.querySelector(".output").textContent = JSON.stringify(cdnjsData)
+  const prettyData = js_beautify(JSON.stringify(cdnjsData), { indent_size: 2 })
+  document.querySelector(".output").textContent = prettyData
 }
