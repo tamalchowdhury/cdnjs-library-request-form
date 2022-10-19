@@ -40,7 +40,13 @@
             Please provide the name of the library that you wish to have added
             to cdnjs
           </p>
-          <input type="text" placeholder="bootstrap" />
+          <input
+            type="text"
+            name="name"
+            value="bootstrap"
+            placeholder="bootstrap"
+            required
+          />
         </section>
         <section>
           <label for="">Library license *</label>
@@ -77,7 +83,11 @@
 
         <button>Submit</button>
       </form>
+
+      <h3>Output</h3>
+      <pre class="output"></pre>
     </main>
-    <script src="./script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.14.6/beautify.min.js"></script>
+    <script src="./script.js" type="module"></script>
   </body>
 </html>
