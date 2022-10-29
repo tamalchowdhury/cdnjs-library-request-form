@@ -56,7 +56,7 @@
           />
         </section>
         <section>
-          <label for="license">Library license *</label>
+          <label for="license">Library license</label>
           <p>
             Please provide a link to the open-source license that the library is
             covered by (MIT, Apache 2.0, etc.)
@@ -65,10 +65,11 @@
             type="text"
             name="license"
             placeholder="https://github.com/twbs/bootstrap/blob/main/LICENSE"
+            disabled
           />
         </section>
         <section>
-          <label for="source">Library source *</label>
+          <label for="source">Library source</label>
           <p>
             Please provide a link an <strong>NPM package</strong>
             <!-- or tagged Git repository -->
@@ -79,10 +80,11 @@
             type="text"
             name="source"
             placeholder="https://www.npmjs.com/package/bootstrap"
+            disabled
           />
         </section>
 
-        <label for="fileNames">Files to include *</label>
+        <label for="fileNames">Files to include</label>
         <p>
           Please provide a list of all the files that we should include from the
           source for the library on cdnjs
@@ -94,6 +96,7 @@
           placeholder="bootstrap.min.js
 bootstrap.min.css
           "
+          disabled
         ></textarea>
 
         <button>Submit</button>
